@@ -1,55 +1,55 @@
 ﻿<?xml version="1.0"?>
 <Sales>
-  <Sale id="1">
+  <Sale id="1" data="01.12.2021">
      <ShopAssistant id="3">
         <Product id="2">
             <Number>7</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="2">
+   <Sale id="2" data="30.11.2021">
      <ShopAssistant id="4">
         <Product id="7">
             <Number>2</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="3">
+   <Sale id="3" data="24.11.2021">
      <ShopAssistant id="2">
         <Product id="3">
             <Number>3</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="4">
+   <Sale id="4" data="25.11.2021">
      <ShopAssistant id="1">
         <Product id="6">
             <Number>1</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="5">
+   <Sale id="5" data="24.11.2021">
      <ShopAssistant id="1">
         <Product id="3">
             <Number>4</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="6">
+   <Sale id="6" data="24.11.2021">
      <ShopAssistant id="2">
         <Product id="5">
             <Number>1</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="7">
+   <Sale id="7" data="27.11.2021">
      <ShopAssistant id="4">
         <Product id="10">
             <Number>2</Number>
         </Product>
     </ShopAssistant>
   </Sale>
-   <Sale id="8">
+   <Sale id="8" data="29.11.2021">
      <ShopAssistant id="3">
         <Product id="9">
             <Number>12</Number>
