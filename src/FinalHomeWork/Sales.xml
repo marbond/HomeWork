@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<Sales>
+  <Sale id="1">
+     <ShopAssistant id="3">
+        <Product id="2">
+            <Number>7</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="2">
+     <ShopAssistant id="4">
+        <Product id="7">
+            <Number>2</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="3">
+     <ShopAssistant id="2">
+        <Product id="3">
+            <Number>3</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="4">
+     <ShopAssistant id="1">
+        <Product id="6">
+            <Number>1</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="5">
+     <ShopAssistant id="1">
+        <Product id="3">
+            <Number>4</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="6">
+     <ShopAssistant id="2">
+        <Product id="5">
+            <Number>1</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="7">
+     <ShopAssistant id="4">
+        <Product id="10">
+            <Number>2</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+   <Sale id="8">
+     <ShopAssistant id="3">
+        <Product id="9">
+            <Number>12</Number>
+        </Product>
+    </ShopAssistant>
+  </Sale>
+</Sales>

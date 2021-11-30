@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<ShopAssistants>
+    <ShopAssistant id="1">
+        <Name>Name1</Name>
+        <FamilyName>FamilyName1</FamilyName>
+    </ShopAssistant>  
+    <ShopAssistant id="2">
+        <Name>Name2</Name>
+        <FamilyName>FamilyName2</FamilyName>
+    </ShopAssistant> 
+    <ShopAssistant id="3">
+        <Name>Name3</Name>
+        <FamilyName>FamilyName3</FamilyName>
+    </ShopAssistant> 
+</ShopAssistants>

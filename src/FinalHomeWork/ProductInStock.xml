@@ -1,0 +1,129 @@
+﻿<?xml version="1.0"?>
+<ProductsInStock>
+    <ShopAssistant id="1">
+        <Product id="1">
+            <Price>123</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="2">
+            <Price>345</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="3">
+            <Price>567</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="4">
+            <Price>789</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="5">
+            <Price>91011</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="6">
+            <Price>111213</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="7">
+            <Price>131415</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="8">
+            <Price>151617</Price>
+            <Number>1</Number>
+        </Product> 
+        <Product id="9">
+            <Price>171820</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="10">
+            <Price>202122</Price>
+            <Number>1</Number>
+        </Product>
+    </ShopAssistant>  
+    <ShopAssistant id="2">
+        <Product id="1">
+            <Price>123</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="2">
+            <Price>345</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="3">
+            <Price>567</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="4">
+            <Price>789</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="5">
+            <Price>91011</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="6">
+            <Price>111213</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="7">
+            <Price>131415</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="8">
+            <Price>151617</Price>
+            <Number>1</Number>
+        </Product> 
+        <Product id="9">
+            <Price>171820</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="10">
+            <Price>202122</Price>
+            <Number>1</Number>
+        </Product>
+    </ShopAssistant> 
+    <ShopAssistant id="3">
+        <Product id="1">
+            <Price>123</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="2">
+            <Price>345</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="3">
+            <Price>567</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="4">
+            <Price>789</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="5">
+            <Price>91011</Price>
+            <Number>1</Number>
+        </Product>  
+        <Product id="6">
+            <Price>111213</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="7">
+            <Price>131415</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="8">
+            <Price>151617</Price>
+            <Number>1</Number>
+        </Product> 
+        <Product id="9">
+            <Price>171820</Price>
+            <Number>1</Number>
+        </Product>      
+        <Product id="10">
+            <Price>202122</Price>
+            <Number>1</Number>
+        </Product>
+    </ShopAssistant> 
+</ProductsInStock>
