@@ -1,28 +1,33 @@
 package FinalHomeWork;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.stream.Stream;
 
 /**
  * Класс, который, на основе входных данных, выводит топ 5 товаров, входной файл XML, выходной JSON
  * @author m.bondarchuk
- * @version 1
+ * @version 2
  */
 
 public class TopFiveProducts {
 
     //Создание массива, который будет содержать объекты типа "Анализ продаж"
     private static ArrayList<SalesAnalysis> SalesAnalyzes = new ArrayList<>();
+    //Создание массива, который будет содержать топ 5 товаров
+    private static ArrayList<SalesAnalysis> TopFiveProducts = new ArrayList<>();
 
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 
@@ -39,19 +44,18 @@ public class TopFiveProducts {
         parser.parse(new File("src/FinalHomeWork/Sales.xml"), handlerSales);
 
         //Обратная сортировка по кол-ву продаж
-        Collections.sort(SalesAnalyzes);
+        Stream<SalesAnalysis> stream = SalesAnalyzes.stream();
+        Stream<SalesAnalysis> filteredStream = stream.sorted((SA1, SA2)->((Integer)SA2.getNumberOfSales()).compareTo(SA1.getNumberOfSales()));
+
+        //Заполнение массива "Топ 5 товаров"
+        filteredStream.limit(5).forEach(SA -> TopFiveProducts.add(SA));
 
         //Вывод информации о 5 товарах с наибольшим количеством продаж в Json-файл
         //если файл существует, он перезатрётся
-        PrintWriter writer = new PrintWriter("src/FinalHomeWork/TopFiveProducts.json", "UTF-8");
-
-        writer.println("{");
-        for (int x = 0; x < 4; x++){
-            writer.println("\"" + (SalesAnalyzes.get(x)).getName() + "\"" + ": " + "\"" + (SalesAnalyzes.get(x)).getNumberOfSales() + "\",");
-        }
-        writer.println("\"" + (SalesAnalyzes.get(4)).getName() + "\"" + ": " + "\"" + (SalesAnalyzes.get(4)).getNumberOfSales() + "\"");
-        writer.println("}");
-        writer.close();
+        ObjectMapper objectMapper = new ObjectMapper();
+        Path path = Paths.get("src/FinalHomeWork/TopFiveProducts.json");
+        String jsonData = objectMapper.writeValueAsString(TopFiveProducts);
+        Files.write(path, (jsonData).getBytes(StandardCharsets.UTF_8));
 
     }
 
@@ -113,7 +117,7 @@ public class TopFiveProducts {
                 if (lastElementName.equals("Number")) {
                     for (SalesAnalysis SalesAnalysis : SalesAnalyzes) {
                         if (SalesAnalysis.getID() == id) {
-                           int NumberOfSales = SalesAnalysis.getNumberOfSales();
+                            int NumberOfSales = SalesAnalysis.getNumberOfSales();
                             SalesAnalysis.setNumberOfSales(NumberOfSales+Integer.parseInt(information));
                         }
                     }

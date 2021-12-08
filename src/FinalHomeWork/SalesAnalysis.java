@@ -3,11 +3,10 @@ package FinalHomeWork;
 /**
  * Класс "Анализ продаж", который содержит информацию о названии товара, его ID и проданном кол-ве
  * @author m.bondarchuk
- * @version 1
+ * @version 2
  */
 
-//добавляем возможность сравнивать объекты SalesAnalysis
-public class SalesAnalysis implements Comparable<SalesAnalysis> {
+public class SalesAnalysis {
 
     private int ID;
     private String Name;
@@ -41,12 +40,6 @@ public class SalesAnalysis implements Comparable<SalesAnalysis> {
 
     public void setNumberOfSales(int NumberOfSales) {
         this.NumberOfSales = NumberOfSales;
-    }
 
-    //реализуем метод compareTo интерфейса Comparable для обратной сортировки по кол-ву проданных единиц
-    @Override
-    public int compareTo(SalesAnalysis o) {
-        return  o.getNumberOfSales() - this.getNumberOfSales();
     }
-
 }

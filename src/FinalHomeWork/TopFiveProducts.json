@@ -1,7 +1,1 @@
-{
-"Name9": "12",
-"Name2": "7",
-"Name3": "7",
-"Name7": "2",
-"Name10": "2"
-}
+[{"name":"Name9","numberOfSales":12,"id":9},{"name":"Name2","numberOfSales":7,"id":2},{"name":"Name3","numberOfSales":7,"id":3},{"name":"Name7","numberOfSales":2,"id":7},{"name":"Name10","numberOfSales":2,"id":10}]
